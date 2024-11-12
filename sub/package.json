@@ -1,0 +1,30 @@
+{
+  "name": "sub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.js",
+      "types": "./dist/main.d.ts"
+    },
+    "./sub-sub-module": {
+      "types": "./dist/sub-sub-module/index.d.ts",
+      "import": "./dist/sub-sub-module.mjs",
+      "default": "./dist/sub-sub-module.mjs",
+      "require": "./dist/sub-sub-module.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}

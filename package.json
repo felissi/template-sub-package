@@ -1,0 +1,18 @@
+{
+  "name": "test-subpackage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "sub": "file:./sub"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,1 @@
+export { subModuleFunction } from "./fn";
